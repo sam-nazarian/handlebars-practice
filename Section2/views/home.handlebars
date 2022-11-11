@@ -1,0 +1,13 @@
+{{! used in Question 1 }}
+<h1>Some Milestones of Internet History</h1>
+
+<h3>In: {{year}}</h3>
+<h3>{{title}}</h3>
+
+<a href='/?timeline={{next}}'><h3><strong>Next</strong></h3></a>
+
+{{#if url}}
+  <a href='({url}}'>
+    <img src='{{url}}' alt='picture' />
+  </a>
+{{/if}}

@@ -1,0 +1,50 @@
+{
+  "The-Birth": {
+    "title": "The Internet is born, but there is no such thing called website",
+    "year": 1969,
+    "next": "The-First-Website",
+    "url": "https://images.theconversation.com/files/143754/original/image-20161029-15788-1ykuset.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"
+  },
+  "The-First-Website": {
+    "title": "20 years later, the first website arrive",
+    "year": 1989,
+    "next": "The-Birth_of_at_Sign",
+    "url": "https://www.sciencealert.com/images/nov-15/amnesty.jpg"
+  },
+  "The-Birth_of_at_Sign": {
+    "title": "The Birth of @ Sign, generating confusions among newscasters",
+    "year": 1994,
+    "next": "Welcome-to-the-Wired-World",
+    "url": "https://cdn.britannica.com/45/104045-050-116C1F93/Signs-of-the-Zodiac-astrology.jpg"
+  },
+  "Welcome-to-the-Wired-World": {
+    "title": "1 million domains launched by that time",
+    "year": 1997,
+    "next": "Dot-Com-Boom",
+    "url": "https://esgeemusings.files.wordpress.com/2014/01/wired-world.jpg"
+  },
+  "Dot-Com-Boom": {
+    "title": ".com boom peaks. PHP 4.0 released: the first purpose-built language for websites",
+    "year": 2000,
+    "next": "Web-2.0",
+    "url": "https://bottomlinelawgroup.com/wp-content/uploads/2011/01/Nasdaq.png"
+  },
+  "Web-2.0": {
+    "title": "The Internet becomes two-way street. Most website development was still done on live servers via FTP",
+    "year": 2004,
+    "next": "Cloud-Computing-Takes-off",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Web_2.0_Map.svg/1200px-Web_2.0_Map.svg.png"
+  },
+  "Cloud-Computing-Takes-off": {
+    "title": "Github.com launches, developers feel the pain of fragmented environments",
+    "year": 2009,
+    "next": "Today",
+    "url": "https://www.ibm.com/blogs/cloud-computing/wp-content/uploads/2015/12/wpid-thumbnail-14f330f88f2c3013489249f82da6f2f3.jpeg"
+  },
+  "Today": {
+    "title": "JavaScript, Node.js, Express, and Handlebars are trending technogloes for web development",
+    "year": 2022,
+    "next": "Birth",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/800px-Node.js_logo.svg.png"
+  }
+}
