@@ -1,0 +1,41 @@
+a)Describe the reasons that Node.JS is able to out perform traditional web servers like apache while requiring less system resources?
+
+This is because node js is single threaded and uses none blocking input/output calls vs other servers such as apache are multi-threaded. Other traditional web servers either have a thread poll were each thread is assigned to handle a different request or even some traditional web servers use a process per request were no thread pool is even required. 
+
+In node, a single thread is used to handle multiple requests, in a asynchronous way, so forexample while the database is executing our query, the thread is able to serve another client, this means that the thread doesn’t need to wait. This will be done by the event loop. Node continuously monitors the event queue and if there’s something that’s done loading then the event loop will run that (in detail, the event loop moves the callback from event queue to call stack. When that callback in event queue is ready to be ran.)
+
+in other servers with blocking non-async servers a single thread can only serve one client, that’s why we need a new thread for every client. Because of this many threads will be required. If we get a lot of concurrent clients and our server runs out of threads then we need to get more hardware (to get more threads. If we don’t do this then our clients would need to wait for a thread to be empty.
+
+So, as the event loop allows many connections to be held. Node would be allowed to handle a lot of concurrent connections at once, which makes node very easy to scale as it can serve more clients without need to serve more hardware.
+
+What is the command to install a package named express for use in your current Node.JS project?
+
+b) What is the command to install a package named express globally?
+NOTE: we no longer need the ‘--save’ keyword now it’s automatically added as a dependency without ‘--save’ keyword being present.
+$ npm install express --save
+
+c) What is the command to install a package named express globally?
+$ npm install express -g --save
+
+d) What is the command to install a package named express with the version number 4.16.4?
+$ npm install express @4.16.4 --save
+
+
+
+e) What are the differences between the versions of the following packages? i.e., what do the symbols ^ and >= mean? What does it mean if we don’t include either?
+
+This is the semantic versioning of the dependencies inside the package.json file which is created when you enter npm init.
+right most number is ‘patches’. Center number is ‘minor’, backward compatible, left most is ‘major’, not backward compatible
+
+1) ‘^’ allows updates in the minor and patch as long version is 4.17.2 or higher.
+Forexample in ^4.17.2 any of the below is okay(it will update to 4.18.1 in this example).
+4.17.3	4.17.4, 4.18.0, 4.18.1
+
+BUT the major won’t be updated. This is usefull because minor changes are backward compatible so code less likely to break
+
+2) ‘>=’ means version 4.0.2 or higher (it will update to the latest version). This allows major, minor, and patch changes. So forexample all of the below are okay
+4.0.4 5.2.0 6.0.0 
+
+But anything below 4.0.2 is NOT okay
+
+3) without any of these signs the package.json will only use that exact version, so forexample for expresson-session it will only use the exact version 1.17.2 (it won’t update to any other version)

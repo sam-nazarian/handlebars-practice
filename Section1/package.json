@@ -1,0 +1,15 @@
+{
+  "name": "3119137-assignment1",
+  "version": "1.0.0",
+  "description": "Saman Fathnazarian's Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saman Fathnazarian",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2"
+  }
+}
